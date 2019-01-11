@@ -1,0 +1,59 @@
+body{
+  overflow: hidden;
+}
+
+.pet{
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.bloco{
+  width: 400px;
+}
+
+.botao{
+  padding: 6px 50px;
+  background: #777;
+  color: #f2f2f2;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.botao:hover{
+  background: #222;
+}
+
+.botao:active{
+  background: #777;
+}
+
+.barra{
+  width: 100px;
+  background: #99cc00;
+  margin: 5px 10px;
+  border-radius:4px;
+  padding: 3px 3px;
+}
+
+.lado{
+  float:left;
+  margin: 10px 25px;
+  width: 120px;
+}
+
+#blocoBotao{
+  padding: 115px 0px;
+}
+
+#blocoImagem{
+  padding: 0px 0px;
+  position: relative;
+  left:200px;
+  top: 100px;
+}
+
+#mensagem{
+  color: red;
+}
