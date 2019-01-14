@@ -21,8 +21,7 @@ function Loop(time = Math.floor((Math.random() * 5) + 1)){
   */
   if(fome <= 0 || higiene <= 0 || sono <= 0 || diversao <= 0 || social <= 0){
      document.getElementById("pet").src="img/preto.gif";
-     document.getElementById('mensagem').innerHTML = 'Você deixou seu tamagochi morrer ):';
-     document.write("<h1>Você deixou seu tamagochi morrer ;-;</h1>")
+     window.location.replace('gameover.html');
   }
   else if(total > 400){
      document.getElementById("pet").src="img/azul.gif";
@@ -39,6 +38,11 @@ function Loop(time = Math.floor((Math.random() * 5) + 1)){
   else if(total > 50){
      document.getElementById("pet").src="img/vermelho.jpg";
   }
+
+/*
+Decaimento Aleatório de Atributos
+  */
+
 
   fome = fome - parseInt(Math.floor((Math.random() * 5) + 1));
   higiene = higiene - parseInt(Math.floor((Math.random() * 5) + 1));
@@ -69,11 +73,11 @@ function Loop(time = Math.floor((Math.random() * 5) + 1)){
 	Essa função é responsável por começar e chamar o temporizador da função LOOP
 */
 function Start(){
-  var temporizador = setInterval(Loop, 10);
+  var temporizador = setInterval(Loop, 1300);
 }
 
 /*
-	Essa função é para recuperar a fome
+	Essa função é para recuperar a fome impedir de passar de 100%
 */
 function Comer(){
 
@@ -88,7 +92,7 @@ function Comer(){
 }
 
 /*
-	Essa função é para recuperar a higiene
+	Essa função é para recuperar a higiene impedir de passar de 100%
 */
 function Banho(){
   higiene += 10;
@@ -100,7 +104,7 @@ function Banho(){
 }
 
 /*
-	Essa função é para recuperar o sono
+	Essa função é para recuperar o sono e impedir de passar de 100%
 */
 function Dormir(){
   sono += 10;
@@ -112,7 +116,7 @@ function Dormir(){
 }
 
 /*
-	Essa função é para recuperar a diversão
+	Essa função é para recuperar a diversão impedir de passar de 100%
 */
 function Brincar(){
   diversao += 10;
@@ -124,7 +128,7 @@ function Brincar(){
 }
 
 /*
-	Essa função é para recuperar o social
+	Essa função é para recuperar o social impedir de passar de 100%
 */
 function Conversar(){
   social += 10;

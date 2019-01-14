@@ -57,3 +57,16 @@ body{
 #mensagem{
   color: red;
 }
+
+
+/*
+
+Classes do html gameover
+
+*/
+
+#gameover{
+font-size: 500%;  
+color: red;
+text-align: center
+}
