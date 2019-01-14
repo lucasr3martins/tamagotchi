@@ -22,6 +22,7 @@ function Loop(time = Math.floor((Math.random() * 5) + 1)){
   if(fome <= 0 || higiene <= 0 || sono <= 0 || diversao <= 0 || social <= 0){
      document.getElementById("pet").src="img/preto.gif";
      document.getElementById('mensagem').innerHTML = 'Você deixou seu tamagochi morrer ):';
+     document.write("<h1>Você deixou seu tamagochi morrer ;-;</h1>")
   }
   else if(total > 400){
      document.getElementById("pet").src="img/azul.gif";
@@ -68,16 +69,22 @@ function Loop(time = Math.floor((Math.random() * 5) + 1)){
 	Essa função é responsável por começar e chamar o temporizador da função LOOP
 */
 function Start(){
-  var temporizador = setInterval(Loop, 1000);
+  var temporizador = setInterval(Loop, 10);
 }
 
 /*
 	Essa função é para recuperar a fome
 */
 function Comer(){
+
   fome += 10;
+  if (fome >= 100){
+    fome = 100;
+ }
   document.getElementById('fome').innerHTML = fome + '%';
   document.getElementById('fome').style.width = fome + 'px';
+  
+
 }
 
 /*
@@ -85,6 +92,9 @@ function Comer(){
 */
 function Banho(){
   higiene += 10;
+  if (higiene >= 100){
+    higiene = 100;
+ }
   document.getElementById('higiene').innerHTML = higiene + '%';
   document.getElementById('higiene').style.width = higiene + 'px';
 }
@@ -94,6 +104,9 @@ function Banho(){
 */
 function Dormir(){
   sono += 10;
+  if (sono >= 100){
+    sono = 100;
+ }
   document.getElementById('sono').innerHTML = sono + '%';
   document.getElementById('sono').style.width = sono + 'px';
 }
@@ -103,6 +116,9 @@ function Dormir(){
 */
 function Brincar(){
   diversao += 10;
+  if (diversao >= 100){
+    diversao = 100;
+ }
   document.getElementById('diversao').innerHTML = diversao + '%';
   document.getElementById('diversao').style.width = diversao + 'px';
 }
@@ -112,6 +128,9 @@ function Brincar(){
 */
 function Conversar(){
   social += 10;
+  if (Conversar >= 100){
+    Conversar = 100;
+ }
   document.getElementById('social').innerHTML = social + '%';
   document.getElementById('social').style.width = social + 'px';
 }
