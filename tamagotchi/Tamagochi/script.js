@@ -11,7 +11,7 @@ var social = 100;
 	Essa função tem a função de atualizar as informações na tela
 	de tanto em tanto tempo
 */
-function Loop(time = 6){
+function Loop(time = Math.floor((Math.random() * 5) + 1)){
 
   var total = fome + higiene + sono + diversao + social;
 
@@ -39,11 +39,11 @@ function Loop(time = 6){
      document.getElementById("pet").src="img/vermelho.jpg";
   }
 
-  fome = fome - parseInt(time);
-  higiene = higiene - parseInt(time);
-  sono = sono - parseInt(time);
-  diversao = diversao - parseInt(time);
-  social = social - parseInt(time);
+  fome = fome - parseInt(Math.floor((Math.random() * 5) + 1));
+  higiene = higiene - parseInt(Math.floor((Math.random() * 5) + 1));
+  sono = sono - parseInt(Math.floor((Math.random() * 5) + 1));
+  diversao = diversao - parseInt(Math.floor((Math.random() * 5) + 1));
+  social = social - parseInt(Math.floor((Math.random() * 5) + 1));
 
   /*
 	 Nessa parte nós controlamos a barra de status do pet
