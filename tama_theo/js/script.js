@@ -103,7 +103,7 @@ function Start() {
 //Essa função é para recuperar a fome impedir de passar de 100%
 
 function Comer() {
-// Não consigo fazer essa bosta somar, ultilizando as variaveis dentro da array
+// Não consigo fazer essa bosta somar, utilizando as variaveis dentro da array
   fome += 10;
   if (fome >= 100) {
     fome = 100;
