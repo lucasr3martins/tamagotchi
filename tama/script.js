@@ -8,8 +8,8 @@ var diversao = 100;
 var social = 100;
 
 /*
-	Essa função tem a função de atualizar as informações na tela
-	de tanto em tanto tempo
+	Essa função tem por objetibo atualizar as informações na tela
+	 progressivamente
 */
 function Loop(time = 2){
 
@@ -46,7 +46,15 @@ function Loop(time = 2){
   social = social - parseInt(time);
 
   /*
-	 Nessa parte nós controlamos a barra de status do pet
+Decaimento Aleatório de Atributos
+  */
+  fome = fome - parseInt(Math.floor((Math.random() * 2) + 1));
+  higiene = higiene - parseInt(Math.floor((Math.random() * 2) + 1));
+  sono = sono - parseInt(Math.floor((Math.random() * 2) + 1));
+  diversao = diversao - parseInt(Math.floor((Math.random() * 2) + 1));
+  social = social - parseInt(Math.floor((Math.random() * 2) + 1));
+/*	
+	Nessa parte nós controlamos a barra de status do pet
   */
   document.getElementById('fome').style.width = fome + 'px';
   document.getElementById('higiene').style.width = higiene + 'px';
