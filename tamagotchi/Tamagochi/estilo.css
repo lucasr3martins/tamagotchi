@@ -4,8 +4,8 @@ body{
 
 .pet{
   width: 300px;
-  height: 300px;
- padding-left: 50px;
+  height: 200px;
+ padding-left: 220px;
 }
 
 .bloco{
@@ -14,7 +14,8 @@ body{
 }
 
 .botao{
-  padding: 6px 50px;
+  padding: 6px 25px;
+  padding: 6%;
   color:black;
   border-radius: 4px;
   cursor: pointer;
