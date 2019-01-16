@@ -142,7 +142,7 @@ function Conversar(){
 function gif(){
   
   var $gif         = document.querySelector('.gif'),
-      GIF_DURATION = 2;
+      GIF_DURATION = 12;
 
   function handleGif(){
     
