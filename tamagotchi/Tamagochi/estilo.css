@@ -15,14 +15,11 @@ body{
 }
 
 .botao{
-  padding: 6px 25px;
   padding: 7%;
   color:rgba(51, 50, 50, 0.89);
-  border-radius: 4px;
   cursor: pointer;
-  width: 100%;
   font-size: 50px;
-  list-style-type: none;
+  text-decoration: none;
 }
 
 .botao:hover{
@@ -30,7 +27,7 @@ body{
 }
 
 .botao:active{
-  background: rgb(99, 95, 95);
+  color: BLUE;
 }
 
 .top-left {
@@ -41,10 +38,13 @@ body{
 
 .barra{
   width: 100px;
-  background: #00ccb1;
+  background: rgb(141, 194, 255);
   margin: 5px 10px;
   border-radius:4px;
   padding: 4px 4px;
+}
+.barras{
+  float:right;
 }
 
 .lado{
@@ -58,7 +58,7 @@ body{
 
 #blocoImagem{
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 90px;
   position: center;
   border: 5px solid rgb(0, 0, 0);
   margin-left: 450px;  
@@ -71,8 +71,8 @@ body{
   padding-bottom: 30px;
   position: center;
   border: 5px solid rgb(0, 0, 0);
-  margin-left: 300px;  
-  margin-right:300px;
+  margin-left: 450px;  
+  margin-right:450px;
   left:200px;
   top: 100px;
 }
