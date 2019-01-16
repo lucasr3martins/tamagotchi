@@ -10,7 +10,7 @@ body{
 
 .bloco{
   padding-top: 300px;
-  width: 350px;
+  width: 300px;
 }
 
 .botao{
@@ -60,10 +60,8 @@ body{
   padding-bottom: 20px;
   position: center;
   border: 5px solid rgb(0, 0, 0);
-  margin-left: 300px;  
-  margin-right:300px;
-  left:200px;
-  top: 300px;
+  margin-left: 200px;  
+  margin-right:200px;
 }
 #blocoImagem2{
   padding-top: 30px;

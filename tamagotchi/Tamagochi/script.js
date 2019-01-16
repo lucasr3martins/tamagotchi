@@ -20,23 +20,23 @@ function Loop(time = Math.floor((Math.random() * 5) + 1)){
 	 logo a baixo controlamos o nível de satisfação do pet
   */
   if(fome <= 0 || higiene <= 0 || sono <= 0 || diversao <= 0 || social <= 0){
-     document.getElementById("pet").src="img/preto.gif";
+     document.getElementById("pet").src="img/verde.gif";
      window.location.replace('gameover.html');
   }
   else if(total > 400){
-     document.getElementById("pet").src="img/azul.gif";
+     document.getElementById("pet").src="img/verde.gif";
   }
   else if(total > 300){
-     document.getElementById("pet").src="img/verde.jpg";
+     document.getElementById("pet").src="img/verde.gif";
   }
   else if(total > 200){
-     document.getElementById("pet").src="img/cinza.jpg";
+     document.getElementById("pet").src="img/verde.gif";
   }
   else if(total > 100){
-     document.getElementById("pet").src="img/amarelo.jpg";
+     document.getElementById("pet").src="img/verde.gif";
   }
   else if(total > 50){
-     document.getElementById("pet").src="img/vermelho.jpg";
+     document.getElementById("pet").src="img/preto.gif";
   }
 
 /*
@@ -131,6 +131,14 @@ function Brincar(){
 	Essa função é para recuperar o social impedir de passar de 100%
 */
 function Conversar(){
+  social += 10;
+  if (Conversar >= 100){
+    Conversar = 100;
+ }
+  document.getElementById('social').innerHTML = social + '%';
+  document.getElementById('social').style.width = social + 'px';
+}
+function gif(){
   social += 10;
   if (Conversar >= 100){
     Conversar = 100;
