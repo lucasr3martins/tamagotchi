@@ -88,8 +88,36 @@ Classes do html gameover
 
 */
 
-#gameover{
-font-size: 500%;  
-color: rgb(255, 0, 0);
-text-align: center
-}
+.mainGameover {
+  text-align: center;
+  margin-top: 10%;
+  background-color: black
+  }
+  
+  
+  #gameover{
+  font-size: 500%;  
+  color: rgb(255, 0, 0);
+  }
+  
+  #restart{
+  font-size: 500%; 
+  text-align: center;
+  background-color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  animation: pulsate 2s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 1; 
+  }
+  
+  #restart:hover{
+    animation: pulsate 0s ease-out
+  }
+  
+  @-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+  }
+  
