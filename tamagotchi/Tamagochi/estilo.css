@@ -15,7 +15,7 @@ body{
 
 .botao{
   padding: 6px 25px;
-  padding: 6%;
+  padding: 7%;
   color:rgba(51, 50, 50, 0.89);
   border-radius: 4px;
   cursor: pointer;
@@ -68,8 +68,8 @@ body{
   padding-bottom: 30px;
   position: center;
   border: 5px solid rgb(0, 0, 0);
-  margin-left: 300px;  
-  margin-right:300px;
+  margin-left: 450px;  
+  margin-right: 450px;
   left:200px;
   top: 100px;
 }
