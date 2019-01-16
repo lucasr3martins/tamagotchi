@@ -138,33 +138,13 @@ function Conversar(){
   document.getElementById('social').innerHTML = social + '%';
   document.getElementById('social').style.width = social + 'px';
 }
-
 function gif(){
-  
-  var $gif         = document.querySelector('.gif'),
-      GIF_DURATION = 12;
-
-  function handleGif(){
-    
-    // Cria o canvas com o mesmo tamanho da imagem.
-    var $canvas = document.createElement('canvas');
-    $canvas.setAttribute('width', $gif.width);
-    $canvas.setAttribute('height', $gif.height);
-    
-    // Desenha a imagem no canvas
-    var context = $canvas.getContext('2d');
-    context.drawImage($gif, 0, 0);
-    
-    // Remove a imagem e insere o canvas
-    document.body.removeChild($gif);
-    document.body.appendChild($canvas);
-  }
-  
-  var timeout = setTimeout(function(){
-  	handleGif();
-    clearTimeout(timeout);
-  }, GIF_DURATION);
-  
+  social += 10;
+  if (Conversar >= 100){
+    Conversar = 100;
+ }
+  document.getElementById('social').innerHTML = social + '%';
+  document.getElementById('social').style.width = social + 'px';
 }
 
 /*
