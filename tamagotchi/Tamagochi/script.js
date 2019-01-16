@@ -132,16 +132,8 @@ function Brincar(){
 */
 function Conversar(){
   social += 10;
-  if (Conversar >= 100){
-    Conversar = 100;
- }
-  document.getElementById('social').innerHTML = social + '%';
-  document.getElementById('social').style.width = social + 'px';
-}
-function gif(){
-  social += 10;
-  if (Conversar >= 100){
-    Conversar = 100;
+  if (social >= 100){
+    social = 100;
  }
   document.getElementById('social').innerHTML = social + '%';
   document.getElementById('social').style.width = social + 'px';
