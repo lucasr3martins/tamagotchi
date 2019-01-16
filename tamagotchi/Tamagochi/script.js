@@ -24,19 +24,19 @@ function Loop(time = Math.floor((Math.random() * 5) + 1)){
      window.location.replace('gameover.html');
   }
   else if(total > 400){
-     document.getElementById("pet").src="img/azul.gif";
+     document.getElementById("pet").src="img/preto.gif";
   }
   else if(total > 300){
-     document.getElementById("pet").src="img/verde.jpg";
+     document.getElementById("pet").src="img/verde.gif";
   }
   else if(total > 200){
-     document.getElementById("pet").src="img/cinza.jpg";
+     document.getElementById("pet").src="img/cinza.gif";
   }
   else if(total > 100){
-     document.getElementById("pet").src="img/amarelo.jpg";
+     document.getElementById("pet").src="img/amarelo.gif";
   }
   else if(total > 50){
-     document.getElementById("pet").src="img/vermelho.jpg";
+     document.getElementById("pet").src="img/vermelho.gif";
   }
 
 /*
