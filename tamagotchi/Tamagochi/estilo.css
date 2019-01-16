@@ -5,12 +5,13 @@ body{
 .pet{
   width: 300px;
   height: 200px;
- padding-left: 220px;
+ padding-left: 330px;
 }
 
 .bloco{
-  padding-top: 300px;
-  width: 300px;
+  padding-top: 200px;
+  width: 200px;
+
 }
 
 .botao{
@@ -60,16 +61,18 @@ body{
   padding-bottom: 20px;
   position: center;
   border: 5px solid rgb(0, 0, 0);
-  margin-left: 200px;  
-  margin-right:200px;
+  margin-left: 450px;  
+  margin-right: 450px;
+  left:200px;
+  top: 300px;
 }
 #blocoImagem2{
   padding-top: 30px;
   padding-bottom: 30px;
   position: center;
   border: 5px solid rgb(0, 0, 0);
-  margin-left: 450px;  
-  margin-right: 450px;
+  margin-left: 300px;  
+  margin-right:300px;
   left:200px;
   top: 100px;
 }
@@ -85,36 +88,8 @@ Classes do html gameover
 
 */
 
-.mainGameover {
-text-align: center;
-margin-top: 10%;
-background-color: black
-}
-
-
 #gameover{
 font-size: 500%;  
 color: rgb(255, 0, 0);
+text-align: center
 }
-
-#restart{
-font-size: 500%; 
-text-align: center;
-background-color: rgb(255, 0, 0);
-color: rgb(0, 0, 0);
-text-decoration: none;
-animation: pulsate 2s ease-out;
-animation-iteration-count: infinite;
-opacity: 1; 
-}
-
-#restart:hover{
-  animation: pulsate 0s ease-out
-}
-
-@-webkit-keyframes pulsate {
-  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
-  50% {opacity: 1.0;}
-  100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
-}
-
