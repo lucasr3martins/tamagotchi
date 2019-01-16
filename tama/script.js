@@ -11,7 +11,7 @@ var social = 100;
 	Essa função tem por objetibo atualizar as informações na tela
 	 progressivamente
 */
-function Loop(time = 2){
+function Loop(time = Math.floor((Math.random() * 5) + 1)){
 
   var total = fome + higiene + sono + diversao + social;
 
@@ -20,8 +20,7 @@ function Loop(time = 2){
 	 logo a baixo controlamos o nível de satisfação do pet
   */
   if(fome <= 0 || higiene <= 0 || sono <= 0 || diversao <= 0 || social <= 0){
-     document.getElementById("pet").src="img/preto.jpg";
-     document.getElementById('mensagem').innerHTML = 'Você deixou seu pet morrer, atualize a página';
+     document.getElementById("pet").src="img/preto.jpg"
   }
   else if(total > 400){
      document.getElementById("pet").src="img/azul.jpg";
@@ -80,50 +79,54 @@ function Start(){
 }
 
 /*
-	Essa função é para recuperar a fome
-*/
-function Comer(){
-  fome = 100;
-  document.getElementById('fome').innerHTML = fome + '%';
-  document.getElementById('fome').style.width = fome + 'px';
-}
-
-/*
-	Essa função é para recuperar a higiene
+		função para recuperar a higiene impedir de passar de 100%
 */
 function Banho(){
-  higiene = 100;
+  higiene += 10;
+  if (higiene >= 100){
+    higiene = 100;
+ }
   document.getElementById('higiene').innerHTML = higiene + '%';
   document.getElementById('higiene').style.width = higiene + 'px';
 }
 
 /*
-	Essa função é para recuperar o sono
+	função para recuperar o sono e impedir de passar de 100%
 */
 function Dormir(){
-  sono = 100;
+  sono += 10;
+  if (sono >= 100){
+    sono = 100;
+ }
   document.getElementById('sono').innerHTML = sono + '%';
   document.getElementById('sono').style.width = sono + 'px';
 }
 
 /*
-	Essa função é para recuperar a diversão
+	 função para recuperar a diversão impedir de passar de 100%
 */
 function Brincar(){
-  diversao = 100;
+  diversao += 10;
+  if (diversao >= 100){
+    diversao = 100;
+ }
   document.getElementById('diversao').innerHTML = diversao + '%';
   document.getElementById('diversao').style.width = diversao + 'px';
 }
 
 /*
-	Essa função é para recuperar o social
+	 função para recuperar o social impedir de passar de 100%
 */
 function Conversar(){
-  social = 100;
+  social += 10;
+  if (Conversar >= 100){
+    Conversar = 100;
+ }
   document.getElementById('social').innerHTML = social + '%';
   document.getElementById('social').style.width = social + 'px';
 }
 
+/*
 /*
   Executamos o temporizador
 */
