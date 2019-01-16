@@ -112,14 +112,6 @@ opacity: 1;
   animation: pulsate 0s ease-out
 }
 
-/* Make the element pulse (grow large and small slowly) */
-/* Usage
-    .myElement {
-        animation: pulsate 1s ease-out;
-        animation-iteration-count: infinite;
-        opacity: 1; 
-    }
-*/
 @-webkit-keyframes pulsate {
   0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
   50% {opacity: 1.0;}
