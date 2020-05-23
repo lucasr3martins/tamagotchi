@@ -1,0 +1,126 @@
+body{
+  overflow: hidden;
+	top: 10%;
+	background-color: #ffffff;
+}
+
+.pet{
+  width: 450px;
+  height: 300px;
+  padding-left: 200px;
+}
+
+.bloco{
+  padding-top: 200px;
+  width: 200px;
+}
+
+.botao{
+  padding: 7%;
+  color:rgba(51, 50, 50, 0.89);
+  cursor: pointer;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.botao:hover{
+  color: rgb(43, 105, 175);
+}
+
+.botao:active{
+  color: BLUE;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.barra{
+  width: 100px;
+  background: rgb(141, 194, 255);
+  margin: 5px 10px;
+  border-radius:4px;
+  padding: 4px 4px;
+}
+
+.barras{
+  float:right;
+}
+
+.lado{
+  padding-left:303px;
+}
+
+#blocoBotao{
+  float: top;
+  padding: 35px 0px;
+}
+
+#blocoImagem{
+  padding-top: 30px;
+  padding-bottom: 90px;
+  position: center;
+  border: 5px solid rgb(0, 0, 0);
+  margin-left: 450px;  
+  margin-right: 450px;
+  left:200px;
+  top: 300px;
+}
+
+#blocoImagem2{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: center;
+  border: 5px solid rgb(0, 0, 0);
+  margin-left: 450px;  
+  margin-right:450px;
+  left:200px;
+  top: 100px;
+}
+
+#mensagem{
+  color: rgb(255, 0, 0);
+}
+
+
+/*
+
+Classes do html gameover
+
+*/
+
+.mainGameover {
+  text-align: center;
+  margin-top: 10%;
+  background-color: black
+  }
+  
+  
+  #gameover{
+  font-size: 500%;  
+  color: rgb(255, 0, 0);
+  }
+  
+  #restart{
+  font-size: 500%; 
+  text-align: center;
+  background-color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  animation: pulsate 2s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 1; 
+  }
+  
+  #restart:hover{
+    animation: pulsate 0s ease-out
+  }
+  
+  @-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+  }
+  
